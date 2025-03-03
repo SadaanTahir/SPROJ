@@ -1,0 +1,15 @@
+dorne1:
+latitude: -35.3632709
+longitude: 149.1653365
+
+drone2:
+latitude: -35.3631819
+longitude: 149.1653374
+
+drone3:
+latitude: -35.3631816
+longitude: 149.1652272
+
+drone4:
+latitude: -35.3632709
+longitude: 149.1652273

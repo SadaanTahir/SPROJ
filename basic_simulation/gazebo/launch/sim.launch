@@ -1,0 +1,11 @@
+<launch>
+    <!-- Set environment variables for Gazebo -->
+    <env name="GAZEBO_MODEL_PATH" value="$(env GAZEBO_MODEL_PATH):~/ardupilot_gazebo/models:~/ardupilot_gazebo_roscam/src/ardupilot_gazebo/models"/>
+    <env name="GAZEBO_PLUGIN_PATH" value="$(env GAZEBO_PLUGIN_PATH):/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/noetic/lib"/>
+
+    <!-- Launch Gazebo with the testing configuration -->
+    <include file="$(find ardupilot_gazebo)/launch/testing.launch"/>
+    
+    <!-- Launch the multi-iris simulation with ROS camera -->
+    <include file="$(find ardupilot_gazebo)/launch/multi_iris_with_roscam.launch"/>
+</launch>
